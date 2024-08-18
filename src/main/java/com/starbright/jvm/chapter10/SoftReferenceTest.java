@@ -40,7 +40,7 @@ public class SoftReferenceTest {
 //
         try {
             // 让系统认为内存资源不够
-           byte[] b = new byte[1024 * 1024 * 7]; //会报OOM，软引用为null
+           byte[] b = new byte[1024 * 1024 * 12]; //会报OOM，软引用为null
             // 让系统认为内存资源紧张
             // byte[] b = new byte[1024 * 7168 - 350 * 1024]; // 不会报OOM，软引用为null
         } catch (Throwable e) {
